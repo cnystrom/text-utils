@@ -10,20 +10,15 @@ The descriptions above are the wording from the programs page.
 
 ## Origin
 
-Recovered from Chris Nystrom's old programs page on cactus.org
-(`http://www.cactus.org/~nystrom/programs.html`, also later served from
-`outserv.cactus.org/~nystrom/programs.html`).
+From Chris Nystrom's old programs page (originally on cactus.org):
 
-The programs page itself is archived at:
+https://nystrom.family/chris/old/programs.html
 
-https://web.archive.org/web/20090106010843/http://outserv.cactus.org/~nystrom/programs.html
+The sources are on that site:
 
-The sources were captured by the Wayback Machine from www.cactus.org on
-8 Nov 1997 (and later recaptures are byte-identical). The raw captures used:
-
-- https://web.archive.org/web/19971108102549id_/http://www.cactus.org/~nystrom/dos2unix.c
-- https://web.archive.org/web/19971108102558id_/http://www.cactus.org/~nystrom/unix2dos.c
-- https://web.archive.org/web/19971108102605id_/http://www.cactus.org/~nystrom/mk80col.c
+- https://nystrom.family/chris/old/dos2unix.c
+- https://nystrom.family/chris/old/unix2dos.c
+- https://nystrom.family/chris/old/mk80col.c
 
 The source files have no year in the headers. They are simply signed
 "by Chris Nystrom".

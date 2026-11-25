@@ -29,6 +29,8 @@ The source files have no year in the headers. They are simply signed
 
 No license stated in the original.
 
+This work is dedicated to the public domain under the Unlicense; see LICENSE.
+
 ## Build
 
 These are tiny K&R-style C programs (`main()` with no return type).

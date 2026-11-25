@@ -14,6 +14,8 @@ From Chris Nystrom's old programs page (originally on cactus.org):
 
 https://nystrom.family/chris/old/programs.html
 
+All of Chris's code: https://nystrom.family/chris/code/
+
 The sources are on that site:
 
 - https://nystrom.family/chris/old/dos2unix.c

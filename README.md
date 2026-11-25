@@ -31,19 +31,24 @@ No license stated in the original.
 
 This work is dedicated to the public domain under the Unlicense; see LICENSE.
 
+## Version 1.1 (2026)
+
+Bug fixes; the 1.0 originals from 8 Nov 1997 are kept under the tag `v1.0`.
+
+- All three: `main` now returns `int` and a proper exit status (0 on
+  success, 1 on a write error), so they build with current compilers.
+  unix2dos no longer always exits 26.
+- dos2unix, unix2dos: write errors (for example a full disk) are reported.
+- unix2dos: lines that already end in CR LF are no longer doubled to CR CR LF.
+- mk80col: the CR of a DOS line ending no longer counts as a column, and
+  tabs advance to the next 8-column tab stop.
+
+unix2dos still appends Ctrl-Z, and dos2unix still stops at it, as before.
+
 ## Build
 
-These are tiny K&R-style C programs (`main()` with no return type).
+    cc -O2 -o dos2unix dos2unix.c
+    cc -O2 -o unix2dos unix2dos.c
+    cc -O2 -o mk80col mk80col.c
 
-On a current gcc they fail in the default language mode (implicit `int`).
-They build with either of:
-
-```
-gcc -std=c89 -O0 dos2unix.c -o dos2unix
-gcc -std=gnu89 -O0 dos2unix.c -o dos2unix
-```
-
-The same flags work for `unix2dos.c` and `mk80col.c`. The code was not
-modified to make it compile.
-
-They read stdin and write stdout.
+Each is a filter: `dos2unix < in.txt > out.txt`.
